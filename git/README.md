@@ -18,9 +18,10 @@ $ git add <nombre del archivo> (--a = all) --> añadir un archivo a GIT
 $ git checkout -b <master>  --> con el -b lo que hace es crear la rama e ir a ella. $ git checkout -->para cambiar la rama con la que estamos trabajando: Master, develop, feature. con el $ git checkout <nombre del archivo> --> regresa la versión del archivo
 $ git merge <ubicación y nombre del archivo> --> se hace desde la que tiene la version antigua o más importante
 $ git reset --> te quita del stage lo que tienes ahí, lo que pones en el cajón. $ git reset --hard HEAD --> nos devuelve al último commit
-$ git fetch --> nos trae la información de una copia que tenemos un fork
+$ git fetch --> nos trae la información de una copia que tenemos un fork $ git fetch upstream y después $ git merge upstream/develop 
 ``` 
 
 [git cheat sheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
 - .gitignore hay veces que tenemos archivos que no queremos subir al repositorio remoto, por lo que hacemos es crear otro archivo llamado ".gitignore", en este archivo añadimos el nombre del archivo que no queremos que aparezca, este archivo ignorará los archivos incluidos.
+
