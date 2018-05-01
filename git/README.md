@@ -25,3 +25,8 @@ $ git fetch --> nos trae la información de una copia que tenemos un fork $ git 
 
 - .gitignore hay veces que tenemos archivos que no queremos subir al repositorio remoto, por lo que hacemos es crear otro archivo llamado ".gitignore", en este archivo añadimos el nombre del archivo que no queremos que aparezca, este archivo ignorará los archivos incluidos.
 
+Si queremos visualizar el código de alguien que ha solicitado una Pull Request, lo que debemos es:
+1. Commit changes.
+2. coger el número de la Pull request
+3. en git hacemos: $ git fetch upstream pull/86/head:review-pr
+4. y podremos acceder, con un checkout o un branch
